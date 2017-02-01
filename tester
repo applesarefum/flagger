@@ -4,3 +4,4 @@ def qwe():
     input("I GUESS IT WORKED?!")
 
 f.action('h',qwe)
+f.action2('p',qwe)
