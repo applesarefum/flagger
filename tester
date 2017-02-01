@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+import flagger as f
+def qwe():
+    input("I GUESS IT WORKED?!")
+
+f.action('h',qwe)
