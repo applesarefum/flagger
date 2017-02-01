@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import flagger as f
+import flagger as flag
 def qwe():
     input("I GUESS IT WORKED?!")
 
-f.action('h',qwe)
-f.action2('p',qwe)
+flag.action('h',qwe)
+flag.action2('p',qwe)
