@@ -9,9 +9,9 @@ def action(flag,function):
             if flag in thing:
                 function()
 def action2(flag,function):
-    if flag in sys.argv:
-        function()
-def variable(flag,vartype,required):
     for thing in sys.argv:
-        if flag in thing:
-            pass
+        if flag in sys.argv:
+            function()
+def variable(flag,vartype,required):
+    if flag in thing:
+        pass
