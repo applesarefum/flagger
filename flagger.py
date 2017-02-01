@@ -6,6 +6,6 @@ import sys
 def action(flag,function):
     if flag in sys.argv:
         function()
-def variable(flag):
+def variable(flag,vartype,required):
     if flag in sys.argv:
-        
+        pass
