@@ -10,7 +10,7 @@ def action(flag,function):
                 function()
 def action2(flag,function):
     for thing in sys.argv:
-        if flag in sys.argv:
+        if flag in thing:
             function()
 def variable(flag,vartype,required):
     if flag in thing:
