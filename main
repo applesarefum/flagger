@@ -4,13 +4,10 @@ import sys
 
 args = sys.argv
 
-
-
 def main(flag):
-    if flag in args:
-        if flag == "-h":
-            print("HELP")
-        elif flag == "-b":
-            print("BINARY")
+    if flag == "-h":
+        print("HELP")
+    elif flag == "-b":
+        print("BINARY")
     else:
         print("you ARE STUPID")
