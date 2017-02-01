@@ -4,8 +4,10 @@
 import sys
 
 def action(flag,function):
-    if flag in sys.argv:
-        function()
+    for thing in sys.argv:
+        if thing.startswith("-"):
+            if flag in thing:
+                function()
 def variable(flag,vartype,required):
     if flag in sys.argv:
         pass
