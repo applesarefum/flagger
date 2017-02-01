@@ -12,5 +12,6 @@ def action2(flag,function):
     if flag in sys.argv:
         function()
 def variable(flag,vartype,required):
-    if flag in sys.argv:
-        pass
+    for thing in sys.argv:
+        if flag in thing:
+            pass
