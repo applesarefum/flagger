@@ -4,4 +4,4 @@ def qwe():
     input("I GUESS IT WORKED?!")
 
 flag.action('h',qwe)
-flag.action2('p',qwe)
+print(flag.getval("q"))

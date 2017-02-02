@@ -1,24 +1,22 @@
 #Eventually...
 #if a required variable is not defined, user will be prompted
 #if input provided doesn't match proper type, user will be prompted
+#option to have pogram terminate after an action
 import sys
 
-def action(flag,function,exit=False):
-    for thing in sys.argv:
-        if thing.startswith("-"):
-            if flag in thing:
+def action(flag,function):
+    for arg in sys.argv:
+        if arg.startswith("-"):#This requires the user to preface their flag with a "-"
+            if flag in arg:
                 function()
-#idk if this is necessary
-#    if exit==True:
-#        exit()
-#    elif exit==False:
-#        pass
-#    else:
-#        bool(exit)
-def action2(flag,function):
-    for thing in sys.argv:
-        if flag in thing:
-            function()
-def variable(flag):
-    if flag in thing:
-        pass
+#                if exit==True:
+#                    exit()
+#                elif exit==False:
+#                    pass
+#                else:
+#                    bool(exit)
+def getval(flag):
+    for arg in sys.argv:
+        if arg.startswith("-"):#This requires the user to preface their flag with a "-"
+            if flag in arg:
+                return sys.argv.next()
