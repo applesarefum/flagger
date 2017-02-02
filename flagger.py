@@ -18,3 +18,5 @@ def getval(flag):
     for arg in (sys.argv):
         if arg.startswith("-") and flag in arg:
             return sys.argv[sys.argv.index(arg)+1]
+#FOR THE LOVE OF GOD THIS IS SO DISGUSTING OH MY GOD
+#PLEASE LEARN HOW TO USE ENUMERATE()
