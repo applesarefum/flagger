@@ -17,4 +17,4 @@ def action(flag,function):
 def getval(flag):
     for arg in (sys.argv):
         if arg.startswith("-") and flag in arg:
-            return sys.argv.index(arg)
+            return sys.argv[sys.argv.index(arg)+1]
