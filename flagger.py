@@ -2,7 +2,7 @@
 #if a required variable is not defined, user will be prompted
 #if input provided doesn't match proper type, user will be prompted
 #option to have program terminate after an action
-#remove arguments from sys.argv after they've been used
+#remove arguments from sys.argv(is that a possible?) after they've been used
 import sys
 
 def action(flag,function,exit=False):
@@ -15,7 +15,7 @@ def action(flag,function,exit=False):
                 pass
             else:
                 bool(exit)
-def getval(flag,type=string):
+def getval(flag,type='string'):
     for arg in (sys.argv):
         if arg.startswith("-") and flag in arg:
             return sys.argv[sys.argv.index(arg)+1]
