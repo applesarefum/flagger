@@ -5,16 +5,12 @@
 #remove arguments from sys.argv(is that a possible?) after they've been used
 import sys
 
-def action(flag,function,exit=False):
+def action(flag,function,stop=False):
     for arg in sys.argv:
         if arg.startswith("-") and flag in arg:
             function()
-            if exit==True:
+            if stop:
                 exit()
-            elif exit==False:
-                pass
-            else:
-                bool(exit)
 def getval(flag,type='string'):
     for arg in (sys.argv):
         if arg.startswith("-") and flag in arg:
