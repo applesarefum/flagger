@@ -1,9 +1,0 @@
-#!/usr/bin/env python3
-import flagger as flag
-def qwe():
-    input("I GUESS IT WORKED?!")
-def meme():
-    print('I am a meme')
-flag.action('g',meme,True)
-flag.action('h',qwe)
-print(flag.getval("q"))
